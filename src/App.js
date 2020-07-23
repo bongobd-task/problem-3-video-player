@@ -29,6 +29,10 @@ function App() {
   const handleForward = () => (ref.current.currentTime += 0.5);
 
   const handleBackward = () => (ref.current.currentTime -= 0.5);
+  const handleMute=()=>{
+    const mute = ref.current.muted? ref.current.muted=false : ref.current.muted=true;
+    return mute? setVolumeIcon(muteBtn) : setVolumeIcon(volumeBtn)
+  }
 
   const handleVideoDuration = (e) => {
 
@@ -119,7 +123,7 @@ function App() {
             title="Forward"
           />
 
-          <img src={volumeIcon} id="vol_img" alt="volume" title="Volume" />
+          <img onClick={handleMute} src={volumeIcon} id="vol_img" alt="volume" title="Volume" />
           <input
             type="range"
             id="change_vol"
