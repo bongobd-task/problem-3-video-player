@@ -16,7 +16,7 @@ function App() {
 
   const [duration, setDuration] = useState(0);
 
-  const [progress, setProgress] = useState(0.0);
+  const [progress, setProgress] = useState(0.01);
 
   const [volume, setVolume] = useState(0.7);
 
@@ -29,6 +29,7 @@ function App() {
   const handleForward = () => (ref.current.currentTime += 0.5);
 
   const handleBackward = () => (ref.current.currentTime -= 0.5);
+  
   const handleMute=()=>{
     const mute = ref.current.muted? ref.current.muted=false : ref.current.muted=true;
     return mute? setVolumeIcon(muteBtn) : setVolumeIcon(volumeBtn)
@@ -78,7 +79,7 @@ function App() {
           max={duration}
           value={progress}
           onChange={handleVideoDuration}
-          title={progress.toFixed(2)+'sec'}
+          
         />
 
         <div id="player_controls">
