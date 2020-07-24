@@ -11,34 +11,23 @@ import "./assets/scss/base.scss";
 
 function App() {
   const ref = useRef(null);
-
   const { current } = ref;
-
   const [duration, setDuration] = useState(0);
-
-  const [progress, setProgress] = useState(0.01);
-
+  const [progress, setProgress] = useState(0.0);
   const [volume, setVolume] = useState(0.7);
-
   const [volumeIcon, setVolumeIcon] = useState(volumeBtn);
 
   const handlePlay = () => ref.current.play();
-
   const handlePause = () => ref.current.pause();
-
   const handleForward = () => (ref.current.currentTime += 0.5);
-
   const handleBackward = () => (ref.current.currentTime -= 0.5);
-  
-  const handleMute=()=>{
-    const mute = ref.current.muted? ref.current.muted=false : ref.current.muted=true;
-    return mute? setVolumeIcon(muteBtn) : setVolumeIcon(volumeBtn)
+  const handleMute = () => {
+    const mute = ref.current.muted ? ref.current.muted = false : ref.current.muted = true;
+    return mute ? setVolumeIcon(muteBtn) : setVolumeIcon(volumeBtn)
   }
 
   const handleVideoDuration = (e) => {
-
     setProgress(e.target.value);
-
     return (ref.current.currentTime = e.target.value);
   };
 
@@ -79,8 +68,9 @@ function App() {
           max={duration}
           value={progress}
           onChange={handleVideoDuration}
-          
+        // title={progress.toFixed(2) + 'sec'}
         />
+       
 
         <div id="player_controls">
           <input
@@ -123,8 +113,16 @@ function App() {
             alt="forword"
             title="Forward"
           />
-
-          <img onClick={handleMute} src={volumeIcon} id="vol_img" alt="volume" title="Volume" />
+           
+          <input
+            type="image"
+            onClick={handleMute}
+            src={volumeIcon}
+            id="vol_img"
+            alt="volume"
+            title="Volume"
+          />
+          
           <input
             type="range"
             id="change_vol"
@@ -136,6 +134,9 @@ function App() {
             value={volume}
             title={`${(volume / 1) * 100}%`}
           />
+
+         <span>{`${(duration % 60).toFixed(2)}`}</span>
+
         </div>
       </div>
     </div>
