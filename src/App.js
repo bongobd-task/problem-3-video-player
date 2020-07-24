@@ -41,7 +41,7 @@ function App() {
     const dt = setInterval(() => {
       setDuration(ref.current.duration);
       setProgress(ref.current.currentTime);
-      setCurrentTime(((ref.current.currentTime%60)/60).toFixed(2))
+      setCurrentTime(`${parseInt(ref.current.currentTime / 60, 10)}:${(ref.current.currentTime % 60).toFixed(0)}`)
     }, 1000);
     return () => clearInterval(dt);
   }, [current]);
@@ -137,7 +137,7 @@ function App() {
             title={`${(volume / 1) * 100}%`}
           />
 
-         <span>{`${(duration % 60).toFixed(2)}`}</span>
+         <span>{`${parseInt(duration / 60, 10)}:${(duration % 60).toFixed(0)}`}</span>
 
         </div>
       </div>
