@@ -11,11 +11,12 @@ import "./assets/scss/base.scss";
 
 function App() {
   const ref = useRef(null);
-  const { current } = ref;
+  const {current } = ref;
   const [duration, setDuration] = useState(0);
   const [progress, setProgress] = useState(0.0);
   const [volume, setVolume] = useState(0.7);
   const [volumeIcon, setVolumeIcon] = useState(volumeBtn);
+  const [currentTime,setCurrentTime] = useState(0)
 
   const handlePlay = () => ref.current.play();
   const handlePause = () => ref.current.pause();
@@ -40,6 +41,7 @@ function App() {
     const dt = setInterval(() => {
       setDuration(ref.current.duration);
       setProgress(ref.current.currentTime);
+      setCurrentTime(((ref.current.currentTime%60)/60).toFixed(2))
     }, 1000);
     return () => clearInterval(dt);
   }, [current]);
@@ -68,7 +70,7 @@ function App() {
           max={duration}
           value={progress}
           onChange={handleVideoDuration}
-        // title={progress.toFixed(2) + 'sec'}
+          title={currentTime}
         />
        
 
