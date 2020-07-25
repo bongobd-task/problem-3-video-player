@@ -54,15 +54,48 @@ yarn create react-app problem-3-video-player
 ```
 yarn start
 ```
+**step -3:**
+```
+delete logo.svg, Ap.css and index.css
+and also go to index.js and remove 
 
-**step-3:**
-```
-Create VideoPlayer component
-```
-Step 5:
+import "./index.css";
+
+
+Go to App.js and delete this lines
+
+import logo from './logo.svg';
+import './App.css';
+
+
+
 
 ```
-and write Component Code 
+and also remove all code from App.js
+and write Write this code 
+
+```
+import React from "react";
+
+function App() {
+  
+  return (
+   <div>Test</div>
+  );
+}
+
+export default App;
+```
+
+
+**step-4:**
+```
+Create VideoPlayer component in  dir src/components/VideoPlayer.js
+```
+**Step 5:**
+
+```
+And write  VideoPlayer Component Code
 
 
 import React, { useRef, useState, useEffect } from "react";
@@ -269,13 +302,11 @@ export default VideoPlayer;
 ```
 
 
-**step-5:** 
+**step-6:** 
 
-import VideoPlayer Component in App Component & implement as a Child
+Now Update the App.js Component with this code
 
 ```
-
-
 import React from "react";
 import VideoPlayer from "./components/VideoPlayer";
 import TopReactFrameWork from './assets/top-5-react-framework.mp4';
@@ -300,7 +331,7 @@ export default App;
 ```
 
 
-**Step-6:**
+**Step-7:**
 
 Write down scss styles for VideoPlayer component
 
@@ -443,7 +474,7 @@ body {
 ```
 
 
-**Step 7:**
+**Step 8:**
 
 Make a mixin for VideoPlayer and import it base.scss
 
@@ -559,9 +590,19 @@ Make a mixin for VideoPlayer and import it base.scss
 ```
 
 
-**Step 8:**
+**Step 9:**
 
+```
+save all or ctrl+s
 
+Then
+
+yarn start
+
+if you want to build then run 
+
+yarn build
+```
 ### End
 
 
