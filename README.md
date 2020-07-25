@@ -39,6 +39,6 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 
 
-![Pseudo code]("./src/assets/pesudo-code.png")
+![word flow](https://github.com/bongobd-task/problem-3-video-player/blob/master/src/assets/pesudo-code.png)
 
 
