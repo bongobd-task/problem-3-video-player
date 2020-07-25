@@ -55,6 +55,16 @@ yarn create react-app problem-3-video-player
 yarn start
 ```
 **step -3:**
+
+Add two package via run this command in your terminal
+
+```
+yarn add node-sass prop-types
+```
+
+
+**step -4:**
+
 ```
 delete logo.svg, Ap.css and index.css
 and also go to index.js and remove 
@@ -66,9 +76,6 @@ Go to App.js and delete this lines
 
 import logo from './logo.svg';
 import './App.css';
-
-
-
 
 ```
 and also remove all code from App.js
@@ -88,7 +95,7 @@ export default App;
 ```
 
 
-**step-4:**
+**step-5:**
 ```
 Create VideoPlayer component in  dir src/components/VideoPlayer.js
 ```
@@ -603,6 +610,9 @@ if you want to build then run
 
 yarn build
 ```
+
+**Step 10**
+
 ### End
 
 
