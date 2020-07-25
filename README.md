@@ -42,7 +42,8 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ![word flow](https://github.com/bongobd-task/problem-3-video-player/blob/master/src/assets/workflow.png)
 
 
-# Pseudo Code
+# How I create this 
+
 **Step -1:**
 
 ```
