@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/bongobd-task/problem-3-video-player/static/css/main.5514d8a5.chunk.css",
+    "main.js": "/bongobd-task/problem-3-video-player/static/js/main.4388b7ce.chunk.js",
+    "main.js.map": "/bongobd-task/problem-3-video-player/static/js/main.4388b7ce.chunk.js.map",
+    "runtime-main.js": "/bongobd-task/problem-3-video-player/static/js/runtime-main.4d86e060.js",
+    "runtime-main.js.map": "/bongobd-task/problem-3-video-player/static/js/runtime-main.4d86e060.js.map",
+    "static/js/2.738ff21e.chunk.js": "/bongobd-task/problem-3-video-player/static/js/2.738ff21e.chunk.js",
+    "static/js/2.738ff21e.chunk.js.map": "/bongobd-task/problem-3-video-player/static/js/2.738ff21e.chunk.js.map",
+    "index.html": "/bongobd-task/problem-3-video-player/index.html",
+    "precache-manifest.5abad522c8798b380abfc49afe1a2700.js": "/bongobd-task/problem-3-video-player/precache-manifest.5abad522c8798b380abfc49afe1a2700.js",
+    "service-worker.js": "/bongobd-task/problem-3-video-player/service-worker.js",
+    "static/css/main.5514d8a5.chunk.css.map": "/bongobd-task/problem-3-video-player/static/css/main.5514d8a5.chunk.css.map",
+    "static/js/2.738ff21e.chunk.js.LICENSE.txt": "/bongobd-task/problem-3-video-player/static/js/2.738ff21e.chunk.js.LICENSE.txt",
+    "static/media/corona-virus.mp4": "/bongobd-task/problem-3-video-player/static/media/corona-virus.95921421.mp4",
+    "static/media/top-5-react-framework.mp4": "/bongobd-task/problem-3-video-player/static/media/top-5-react-framework.3eeec97f.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4d86e060.js",
+    "static/js/2.738ff21e.chunk.js",
+    "static/css/main.5514d8a5.chunk.css",
+    "static/js/main.4388b7ce.chunk.js"
+  ]
+}
